@@ -1,5 +1,4 @@
 <?php
-// recuperation des projets
 $handle=opendir(".");
 $projectContents = '';
 while ($file = readdir($handle)) 
