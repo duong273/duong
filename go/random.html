@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      var domain_name = "http://wp.net.vn";
+      var links = [
+        "/?redirect_to=random",
+        "/?redirect_to=random",
+        "/?redirect_to=random",
+        "/?redirect_to=random",
+      ];
+      var random_url = links[Math.floor(Math.random() * links.length)];
+      setTimeout(function () {
+        window.location.href = domain_name + random_url;
+      }, 5000);
+    </script>
+  </head>
+  <body>
+    Bạn sẽ được chuyển đến trang
+    <script>
+      document.write(domain_name + random_url);
+    </script>
+  </body>
+</html>
